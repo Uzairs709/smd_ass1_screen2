@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">A1S2</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_add">Add</string>
+    <string name="reel">Reel</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_3124">3124</string>
+    <string name="followers">Followers</string>
+    <string name="post">Post</string>
+    <string name="following">Following</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_name">Muhammad Uzair</string>
+    <string name="my_bio">Your bio goes here.... and Here too</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="link">youtube.com</string>
+
+</resources>

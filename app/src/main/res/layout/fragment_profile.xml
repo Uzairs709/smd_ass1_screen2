@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profiile.fragment_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="100dp"
+            app:cardBackgroundColor="@color/black"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/profile_pic"
+
+                android:contentDescription="@string/profile_picture" />
+
+        </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="12dp"
+                tools:ignore="RtlSymmetry">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3124"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/post"
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="12dp"
+                tools:ignore="RtlSymmetry">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3124"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/followers"
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="12dp"
+                tools:ignore="RtlSymmetry">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3124"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/following"
+                android:textSize="13sp"
+                android:layout_gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile"
+
+            />
+    </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp" >
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/my_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/bios"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="@string/my_bio"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="@string/link"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#285AF1"
+                />
+        </LinearLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            android:layout_marginTop="12dp"
+
+            >
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/grid_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/grid_icon"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/list_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/list_icon"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/location_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/location_icon"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/person_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/person_icon"
+                />
+        </com.google.android.material.tabs.TabLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
